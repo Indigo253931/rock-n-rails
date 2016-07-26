@@ -6,7 +6,12 @@ class RecordsController < ApplicationController
 
 	def show 
 		@records = Record.find(params[:id])
-		render :show # optional
+		# render :show # optional
+	end
+
+	def new 
+		@record = Record.new
+		# render :new #optional
 	end
 
 end
